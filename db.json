@@ -1,0 +1,28 @@
+{
+  "todos": [
+    {
+      "id": 1,
+      "task": "ReactJs",
+      "description": "A JavaScript library for building user interfaces. React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes.",
+      "complete": true
+    },
+    {
+      "id": 2,
+      "task": "VueJs",
+      "description": "The Progressive JavaScript Framework",
+      "complete": false
+    },
+    {
+      "id": 3,
+      "task": "AngularJS",
+      "description": "AngularJS is a toolset for building the framework most suited to your application development.",
+      "complete": false
+    },
+    {
+      "task": "NestJs",
+      "description": "A progressive Node.js framework for building efficient, reliable and scalable server-side applications",
+      "id": 4,
+      "complete": false
+    }
+  ]
+}
