@@ -12,10 +12,6 @@ interface PropsInterface {
 const TodoCard: FC<PropsInterface> = ({ todo }) => {
   const [isEdit, setIsEdit] = useState(false);
 
-  const handleDelete = () => {};
-
-  const handleComplete = () => {};
-
   return (
     <Card>
       {isEdit ? (
