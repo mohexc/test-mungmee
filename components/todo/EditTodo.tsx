@@ -55,6 +55,9 @@ const EditTodo: FC<PropsInteface> = ({ todo, isEdit, setIsEdit }) => {
           <Button block type="primary" htmlType="submit">
             Edit Todo
           </Button>
+          <Button style={{ marginTop: "1rem" }} block type="primary" onClick={() => setIsEdit(!isEdit)}>
+            Cancle
+          </Button>
         </Form.Item>
       </Form>
     </div>
