@@ -70,6 +70,7 @@ const TodosContext = ({ children }) => {
     try {
       const { data } = await axios.post(`http://localhost:3001/todos`, { task, description });
       getAll();
+      return data;
     } catch (error) {
       const result = error.response.data;
       return {
@@ -83,6 +84,7 @@ const TodosContext = ({ children }) => {
     try {
       const { data } = await axios.patch(`http://localhost:3001/todos/${id}`, { task, description });
       getAll();
+      return data;
     } catch (error) {
       const result = error.response.data;
       return {
@@ -96,6 +98,7 @@ const TodosContext = ({ children }) => {
     try {
       const { data } = await axios.patch(`http://localhost:3001/todos/${id}`, { complete });
       getAll();
+      return data;
     } catch (error) {
       const result = error.response.data;
       return {
@@ -109,6 +112,7 @@ const TodosContext = ({ children }) => {
     try {
       const { data } = await axios.delete(`http://localhost:3001/todos/${id}`);
       getAll();
+      return data;
     } catch (error) {
       const result = error.response.data;
       return {
